@@ -42,6 +42,6 @@ class CommunicationActivity : MvpAppCompatActivity(), CommunicationView {
 
     @SuppressLint("SetTextI18n")
     override fun updateText() {
-        textMessage.text = "Success!"
+        textMessage.text = "Success!!!"
     }
 }
