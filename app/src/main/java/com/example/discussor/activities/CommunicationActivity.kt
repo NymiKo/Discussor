@@ -1,5 +1,6 @@
 package com.example.discussor.activities
 
+import android.annotation.SuppressLint
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -26,7 +27,7 @@ class CommunicationActivity : MvpAppCompatActivity(), CommunicationView {
         val token = "duvY5lT2q1k:APA91bFoznrBgDMcJrARGBPC_tH4SVeewZ9bR5nrBWWHcit7tHwEghZfDjDrJabja9fCIjKojTez0r7BeF61dLNalLhRTJ8Idmx5PqfsGyxCMLxpc4TjmQ1CLxjJnZnWFX-GKfb5qTkO"
 
         sendMessage.setOnClickListener {
-            communicationPresenter.sendMessage(fromWhom = "lol", toWhom = token, message = editMessage.text.toString())
+            communicationPresenter.sendMessage(fromWhom = "token", toWhom = token, message = editMessage.text.toString())
         }
 
         //getMessage = MyFirebaseMessagingService().getMessage()
@@ -39,7 +40,8 @@ class CommunicationActivity : MvpAppCompatActivity(), CommunicationView {
         openBottomSheetDialog.show(supportFragmentManager, "openBottomSheetDialog")
     }
 
+    @SuppressLint("SetTextI18n")
     override fun updateText() {
-        textMessage.text = "Yes"
+        textMessage.text = "Success"
     }
 }
