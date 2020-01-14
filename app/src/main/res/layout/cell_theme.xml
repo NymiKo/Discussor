@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/llCellTheme"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@mipmap/outline">
+
+    <TextView
+        android:id="@+id/textTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Тема"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textNumberPeople"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:text="2/2"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="14sp" />
+
+</LinearLayout>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerThemeList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:background="@color/colorList" >
+
+    </android.support.v7.widget.RecyclerView>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewBanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>
+
+    <FrameLayout
+        android:id="@+id/flDialogShow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#90242424"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/llDialogShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="#000000"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#444444"
+                android:fontFamily="sans-serif-medium"
+                android:text="Выбери сторону"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="23sp" />
+
+            <TextView
+                android:id="@+id/textNameThemeOnDialogSelect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:text="Название темы"
+                android:textAlignment="center"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <Button
+                    android:id="@+id/btnVoteFor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="50"
+                    android:background="@color/clickableVoteFor"
+                    android:text="За"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/btnVoteAgainst"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="50"
+                    android:background="@color/clickableVoteAgainst"
+                    android:text="Против"
+                    android:textColor="@color/cardview_light_background"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCloseDialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/colorBackground"
+                android:text="Закрыть"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <ProgressBar
+        android:id="@+id/pBarLoading"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textError"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Ошибка!"
+        android:textColor="@color/cardview_light_background"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:visibility="gone"/>
+
+</FrameLayout>

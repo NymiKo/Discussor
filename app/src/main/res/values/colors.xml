@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#161616</color>
+    <color name="colorPrimaryDark">#1A1A1A</color>
+    <color name="colorAccent">#161616</color>
+    <color name="colorBackground">#242424</color>
+    <color name="colorList">#313131</color>
+    <color name="notClickableVoteFor">#425E1B</color>
+    <color name="notClickableVoteAgainst">#640B0B</color>
+    <color name="clickableVoteFor">#81CE32</color>
+    <color name="clickableVoteAgainst">#D81313</color>
+    <color name="colorEditMessage">#A5A5A5</color>
+    <color name="textMessage">#000000</color>
+</resources>

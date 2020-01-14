@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/themeListFragment">
+
+    <fragment
+        android:id="@+id/themeListFragment"
+        android:name="com.example.discussor.fragments.ThemeListFragment"
+        android:label="ThemeListFragment"
+        tools:layout="@layout/fragment_theme_list">
+        <action
+            android:id="@+id/action_themeListFragment_to_communicationActivity"
+            app:destination="@id/communicationActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/communicationActivity"
+        android:name="com.example.discussor.activities.CommunicationActivity"
+        android:label="activity_communication"
+        tools:layout="@layout/activity_communication" />
+</navigation>

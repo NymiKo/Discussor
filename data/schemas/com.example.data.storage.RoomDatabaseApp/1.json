@@ -1,0 +1,52 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "b54652ea38eb0f6fdc2fdd6b40b15a27",
+    "entities": [
+      {
+        "tableName": "themes",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id_theme` INTEGER NOT NULL, `name_theme` TEXT NOT NULL, `vote_for` TEXT NOT NULL, `vote_against` TEXT NOT NULL, PRIMARY KEY(`id_theme`))",
+        "fields": [
+          {
+            "fieldPath": "id_theme",
+            "columnName": "id_theme",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name_theme",
+            "columnName": "name_theme",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vote_for",
+            "columnName": "vote_for",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vote_against",
+            "columnName": "vote_against",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id_theme"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'b54652ea38eb0f6fdc2fdd6b40b15a27')"
+    ]
+  }
+}

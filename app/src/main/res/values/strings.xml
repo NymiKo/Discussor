@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Discussor</string>
+    <string name="occupied_by_nobody">0/2</string>
+    <string name="occupied_by_one">1/2</string>
+    <string name="occupied_by_two">2/2</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_token_fmt">Токен получен</string>
+    <string name="fcm_message">Заголовок</string>
+    <string name="default_notification_channel_id">Канал</string>
+</resources>
